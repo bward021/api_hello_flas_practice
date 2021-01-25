@@ -12,6 +12,16 @@ $ pipenv shell
 (hello_flask) pipenv install
 (hello_flask) python app.py
 ```
+
+## Database Setup
+- If you need to setup your database you will need to do the following inside a python repl while in your pipenv shell.
+  - If you get a warning about `SQLALCHEMY_TRACK_MODIFICATIONS` it is ok.
+```
+>>> from fileName import db
+>>> db.create_all()
+```
+
+
 - Flask
   - https://flask.palletsprojects.com/en/1.1.x/
 - Flask SQLAlchemy
