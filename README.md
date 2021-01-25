@@ -40,3 +40,27 @@ $ pipenv shell
   "python.pythonPath": "/YOUR_VIRTUALENV_PATH/bin/python3"
 }
 ```
+
+## Routes
+### GET ALL GUIDES
+- url: localhost:5000/guides
+### GET SINGLE GUIDE
+- url: localhost:5000/guides/ID
+### POST
+- url: localhost:5000/guide
+```json
+body: {
+	"title": "New York Pizza",
+	"content": "$12"
+}
+```
+### PUT
+- url: localhost:5000/guide/ID
+```json
+body: {
+	"title": "New York Pizza",
+	"content": "$12"
+}
+```
+### DELETE
+- url: localhost:5000/guide/ID
